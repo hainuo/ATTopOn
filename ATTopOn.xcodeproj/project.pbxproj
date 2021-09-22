@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EA2BBDC99C42686D3DE1D0F /* Pods_ATTopOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6867896BA2A42F0C092F439 /* Pods_ATTopOn.framework */; };
 		FCE5A29D26E09D5B00B1BD0F /* ATTopOn.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE5A29C26E09D5B00B1BD0F /* ATTopOn.m */; };
 		FCE5A29E26E09D5B00B1BD0F /* ATTopOn.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCE5A29B26E09D5B00B1BD0F /* ATTopOn.h */; };
 /* End PBXBuildFile section */
@@ -25,9 +26,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		208A8728F9DF9DFEDA610882 /* Pods-ATTopOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATTopOn.debug.xcconfig"; path = "Target Support Files/Pods-ATTopOn/Pods-ATTopOn.debug.xcconfig"; sourceTree = "<group>"; };
+		54C5A73CAC617BB11518A7BB /* Pods-ATTopOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATTopOn.release.xcconfig"; path = "Target Support Files/Pods-ATTopOn/Pods-ATTopOn.release.xcconfig"; sourceTree = "<group>"; };
+		B6867896BA2A42F0C092F439 /* Pods_ATTopOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATTopOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE5A29826E09D5B00B1BD0F /* libATTopOn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libATTopOn.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE5A29B26E09D5B00B1BD0F /* ATTopOn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTopOn.h; sourceTree = "<group>"; };
 		FCE5A29C26E09D5B00B1BD0F /* ATTopOn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTopOn.m; sourceTree = "<group>"; };
+		FCE5A2A526E09F5000B1BD0F /* UZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZAppDelegate.h; sourceTree = "<group>"; };
+		FCE5A2A626E09F5100B1BD0F /* UZAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZAppUtils.h; sourceTree = "<group>"; };
+		FCE5A2A726E09F5100B1BD0F /* NSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryUtils.h; sourceTree = "<group>"; };
+		FCE5A2A826E09F5100B1BD0F /* UZURLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZURLTask.h; sourceTree = "<group>"; };
+		FCE5A2A926E09F5200B1BD0F /* UIViewControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerExtension.h; sourceTree = "<group>"; };
+		FCE5A2AA26E09F5200B1BD0F /* UZModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA2BBDC99C42686D3DE1D0F /* Pods_ATTopOn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491488924E139F09CDB8795A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6867896BA2A42F0C092F439 /* Pods_ATTopOn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F98627D8C3C1F6FFEC46A00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				208A8728F9DF9DFEDA610882 /* Pods-ATTopOn.debug.xcconfig */,
+				54C5A73CAC617BB11518A7BB /* Pods-ATTopOn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FCE5A28F26E09D5B00B1BD0F = {
 			isa = PBXGroup;
 			children = (
 				FCE5A29A26E09D5B00B1BD0F /* ATTopOn */,
 				FCE5A29926E09D5B00B1BD0F /* Products */,
+				6F98627D8C3C1F6FFEC46A00 /* Pods */,
+				491488924E139F09CDB8795A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +90,24 @@
 		FCE5A29A26E09D5B00B1BD0F /* ATTopOn */ = {
 			isa = PBXGroup;
 			children = (
+				FCE5A2A426E09F3700B1BD0F /* apicloud */,
 				FCE5A29B26E09D5B00B1BD0F /* ATTopOn.h */,
 				FCE5A29C26E09D5B00B1BD0F /* ATTopOn.m */,
 			);
 			path = ATTopOn;
+			sourceTree = "<group>";
+		};
+		FCE5A2A426E09F3700B1BD0F /* apicloud */ = {
+			isa = PBXGroup;
+			children = (
+				FCE5A2A726E09F5100B1BD0F /* NSDictionaryUtils.h */,
+				FCE5A2A926E09F5200B1BD0F /* UIViewControllerExtension.h */,
+				FCE5A2A526E09F5000B1BD0F /* UZAppDelegate.h */,
+				FCE5A2A626E09F5100B1BD0F /* UZAppUtils.h */,
+				FCE5A2AA26E09F5200B1BD0F /* UZModule.h */,
+				FCE5A2A826E09F5100B1BD0F /* UZURLTask.h */,
+			);
+			path = apicloud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCE5A2A126E09D5B00B1BD0F /* Build configuration list for PBXNativeTarget "ATTopOn" */;
 			buildPhases = (
+				494016040CA83941557AA9CD /* [CP] Check Pods Manifest.lock */,
 				FCE5A29426E09D5B00B1BD0F /* Sources */,
 				FCE5A29526E09D5B00B1BD0F /* Frameworks */,
 				FCE5A29626E09D5B00B1BD0F /* CopyFiles */,
@@ -116,6 +161,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		494016040CA83941557AA9CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATTopOn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCE5A29426E09D5B00B1BD0F /* Sources */ = {
@@ -180,10 +250,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -233,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -243,6 +313,7 @@
 		};
 		FCE5A2A226E09D5B00B1BD0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208A8728F9DF9DFEDA610882 /* Pods-ATTopOn.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -254,6 +325,7 @@
 		};
 		FCE5A2A326E09D5B00B1BD0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C5A73CAC617BB11518A7BB /* Pods-ATTopOn.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";

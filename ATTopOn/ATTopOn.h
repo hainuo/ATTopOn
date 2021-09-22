@@ -6,7 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "apicloud/UZModule.h"
 
-@interface ATTopOn : NSObject
+
+@interface ATTopOn : UZModule
 
 @end
